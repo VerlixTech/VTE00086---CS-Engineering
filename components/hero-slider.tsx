@@ -1,214 +1,131 @@
-// "use client"
 
-// import { useState, useEffect } from "react"
-// import { ChevronLeft, ChevronRight } from "lucide-react"
-// import { cn } from "@/lib/utils"
-// import { useRouter } from "next/navigation"
-// import Image from "next/image"
 
-// const slides = [
-//    {
-//     id: 0,
-//     title: "Design, installation & maintenance",
-//     description:
-//       "Our expert team provides comprehensive installation and commissioning services for all industrial equipment, ensuring optimal performance and safety.",
-//     image: "/design-installation-maintenance.jpeg",
-//     cta: "See More",
-//   }
-// ]
+// "use client";
+
+// import Link from "next/link";
+// import { ArrowRight } from "lucide-react";
+// import Image from "next/image";
 
 // export function HeroSlider() {
-//   const [currentSlide, setCurrentSlide] = useState(0)
-//   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-//   const router = useRouter()
-
-//   useEffect(() => {
-//     if (!isAutoPlaying) return
-
-//     const interval = setInterval(() => {
-//       setCurrentSlide((prev) => (prev + 1) % slides.length)
-//     }, 5000)
-
-//     return () => clearInterval(interval)
-//   }, [isAutoPlaying])
-
-//   const goToSlide = (index: number) => {
-
-//     setCurrentSlide(index)
-//     setIsAutoPlaying(false)
-//     setTimeout(() => setIsAutoPlaying(true), 10000)
-//   }
-
-//   const nextSlide = () => {
-//     setCurrentSlide((prev) => (prev + 1) % slides.length)
-//     setIsAutoPlaying(false)
-//     setTimeout(() => setIsAutoPlaying(true), 10000)
-//   }
-
-//   const prevSlide = () => {
-//     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-//     setIsAutoPlaying(false)
-//     setTimeout(() => setIsAutoPlaying(true), 10000)
-//   }
-
 //   return (
-//     <section id="home" className=" h-[80vh]">
-//   {slides.map((slide, index) => (
-//     <div
-//       key={slide.id}
-//       className={cn(
-//         "absolute inset-0 transition-opacity duration-1000",
-//         index === currentSlide ? "opacity-100" : "opacity-0"
-//       )}
+//     <section
+//       className="relative w-full h-[calc(120vh)] mt-[130px] bg-cover bg-center flex items-center justify-center overflow-hidden "
+//       style={{ backgroundImage: "url('/Rectangle 1.svg')"  }}
 //     >
-//       <div className="absolute inset-0 bg-black/70 z-10" />
+//       {/* Dark overlay */}
+//       <div className="absolute inset-0 bg-black/40"></div>
 
-//       <Image
-//         src="/slide1.jpeg"
-//         alt={slide.title}
-//         className="w-full h-[100vh] object-cover"
-//         width={1920}
-//         height={1080}
-//       />
+//       {/* Content */}
+//       <div className="relative z-20 text-center text-white px-6 max-w-4xl top-[-180]">
+//         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight  font-satoshi">
+//           Engineering Excellence in Steam & Energy Solutions
+//         </h1>
 
-//       <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
-// <div className="absolute inset-0 z-20 flex items-center justify-center text-center">
-//   <div className=" text-center items-center flex flex-col ">
-//     <h1 className="text-3xl max-w-[80%] sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
-//       {slide.title}
-//     </h1>
-//     <div className="flex flex-col items-center">
-//       <p className="text-base max-w-[90%] sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl sm:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed text-center ">
-//         {slide.description}
-//       </p>
-//     </div>
+//         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+//           <Link
+//             href="/consultation"
+//             className="group inline-flex items-center px-6 py-3 bg-white text-black font-medium rounded-full transition-all duration-300 text-md"
+//           >
+//             Request a Consultation
+//             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+//           </Link>
 
-//     <button
-//       className="text-lg px-10 py-2 bg-[#000094] rounded-full font-medium text-white cursor-pointer transition"
-
-//       onClick={() => router.push(`/services?service=${index}`)}
-      
-//     >
-//       {slide.cta}
-//     </button>
-//   </div>
-// </div>
-
+//           <Link
+//             href="/services"
+//             className="inline-flex items-center px-6 py-3 bg-transparent hover:bg-white/10 text-white font-medium rounded-full border border-white transition-all duration-300"
+//           >
+//             View Our Services
+//           </Link>
+//         </div>
 //       </div>
-//     </div>
-//   ))}
 
-//   <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex space-x-3">
-//     {slides.map((_, index) => (
-//       <button
-//         key={index}
-//         onClick={() => goToSlide(index)}
-//         className={cn(
-//           "w-3 h-3 rounded-full transition-all duration-200",
-//           index === currentSlide
-//             ? "bg-white scale-125"
-//             : "bg-white/50 hover:bg-white/75"
-//         )}
-//         aria-label={`Go to slide ${index + 1}`}
+//        {/* White Bottom Section */}
+//       <div className="absolute bottom-0 left-0 w-full h-[140px] bg-white z-20"></div>
+
+//       {/* Red Background Shape */}
+//      <Image
+//           src="/Vector 1.svg"
+//           alt="shape"
+//           width={1300}
+//           height={1300}
+//           className="absolute bottom-10 right-0 w-[900px] lg:w-[1200px] xl:w-[1500px] h-auto z-10"
+//         />
+
+//       {/* Boiler Image */}
+//       <Image
+//         src="/Group 1.png"
+//         alt="boilers"
+//         width={1200}
+//         height={700}
+//         className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30"
 //       />
-//     ))}
-//   </div>
-// </section>
 
-//   )
+      
+//     </section>
+//   );
 // }
+
 
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
-
-const slides = [
-  // {
-  //   image: "/hero1.svg",
-  //   title: "EMPOWERING THE NEXT GENERATION OF ENGINEERS",
-  //   subtitle:
-  //     "Industry-Focused HVAC Training & Professional Development Programs.",
-  // },
-  // {
-  //   image: "/hero2.svg",
-  //   title: "ADVANCED HVAC DESIGN TRAINING",
-  //   subtitle: "Hands-on engineering programs for future professionals.",
-  // },
-    {
-    image: "/hero3.svg",
-    title: "Engineering Excellence in HVAC & MEP Solutions",
-    subtitle: "Professional contracting, installation, and technical expertise you can trust.",
-  },
-];
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSlider() {
   return (
-    <section className="relative w-full h-[100vh]">
+    <section
+      className="relative w-full h-[90vh] md:h-[100vh] lg:h-[120vh] mt-[110px] md:mt-[130px] bg-cover bg-center flex items-center justify-center overflow-hidden"
+      style={{ backgroundImage: "url('/Rectangle 1.svg')" }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 5000 }}
-        pagination={{ clickable: true }}
-        loop
-        className="h-full"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="w-full h-[100vh] bg-cover bg-center relative flex items-center justify-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="absolute top-0 left-0 w-full h-[60vh] bg-gradient-to-b from-black to-transparent"></div>
-              {/* Dark overlay */}
+      {/* Content */}
+      <div className="relative z-20 text-center text-white px-6 max-w-4xl md:-top-[120px]">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-satoshi">
+          Engineering Excellence in Steam & Energy Solutions
+        </h1>
 
-              <div className="absolute inset-0 bg-black/60"></div>
+        {/* Buttons */}
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href="/consultation"
+            className="group inline-flex items-center px-5 py-3 bg-white text-black font-medium rounded-full transition-all duration-300 text-sm md:text-md"
+          >
+            Request a Consultation
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
 
-              {/* Content */}
+          <Link
+            href="/services"
+            className="inline-flex items-center px-5 py-3 bg-transparent hover:bg-white/10 text-white font-medium rounded-full border border-white transition-all duration-300 text-sm md:text-md"
+          >
+            View Our Services
+          </Link>
+        </div>
+      </div>
 
-              <div className="relative z-10 text-center text-white px-6 max-w-4xl">
+      {/* White Bottom Section */}
+      <div className="absolute bottom-0 left-0 w-full h-[90px] md:h-[140px] bg-white z-20"></div>
 
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  {slide.title}
-                </h1>
+      {/* Red Background Shape */}
+      <Image
+        src="/Vector 1.svg"
+        alt="shape"
+        width={1300}
+        height={1300}
+        className="hidden lg:block absolute bottom-6 right-0 w-[900px] lg:w-[1200px] xl:w-[1500px] h-auto z-10"
+      />
 
-                <p className="mt-6 text-lg md:text-xl text-gray-200">
-                  {slide.subtitle}
-                </p>
-
-                {/* Stats Card */}
-
-                <div className="mt-12 backdrop-blur-lg bg-white/30  rounded-2xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-
-                  <div>
-                    <h3 className="text-3xl font-bold">100%</h3>
-                    <p className="text-gray-200">Trusted</p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-3xl font-bold">18+</h3>
-                    <p className="text-gray-200">Years Experiences</p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-3xl font-bold text-white">
-                      100+
-                    </h3>
-                    <p className="text-gray-200">Projects Completed</p>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-{/* Bottom Gradient Bar */}
-<div className="absolute bottom-0 left-0 w-full h-[2vh] bg-gradient-to-r from-[#66C5FF] to-[#89CA29] z-10"></div>
+      {/* Boiler Image */}
+      <Image
+        src="/Group 1.png"
+        alt="boilers"
+        width={1200}
+        height={700}
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[500px] md:w-[650px] lg:w-[900px] xl:w-[1100px] h-auto z-30"
+      />
     </section>
   );
 }

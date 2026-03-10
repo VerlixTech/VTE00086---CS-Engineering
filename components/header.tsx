@@ -1,139 +1,388 @@
-"use client";
+// // components/layout/Header.tsx
+// 'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+// import { useState, useEffect } from 'react';
+// import Link from 'next/link';
+// import Image from 'next/image';
+// import { usePathname } from 'next/navigation';
+// import { Menu, X } from 'lucide-react';
+
+// interface NavItem {
+//   name: string;
+//   href: string;
+// }
+
+// const navigation: NavItem[] = [
+//   { name: 'Home', href: '/' },
+//   { name: 'About us', href: '/about' },
+//   { name: 'Services', href: '/services' },
+//   { name: 'Experience', href: '/experience' },
+//   { name: 'Product Supply', href: '/product-supply' },
+//   { name: 'News', href: '/news' },
+// ];
+
+// export function Header() {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [isScrolled, setIsScrolled] = useState(false);
+//   const pathname = usePathname();
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setIsScrolled(window.scrollY > 10);
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   useEffect(() => {
+//     setIsOpen(false);
+//   }, [pathname]);
+
+//   return (
+//    <header className="fixed top-0 w-full z-50 bg-white py-2">
+//   <div className="container mx-auto px-4">
+
+//     {/* Logo - Top Center */}
+//     <div className="flex justify-center">
+//       <Link href="/">
+//         <div className="relative w-64 h-20">
+//           <Image
+//             src="/image 1.svg"
+//             alt="CS Engineering Services Logo"
+//             fill
+//             className="object-contain"
+//             priority
+//           />
+//         </div>
+//       </Link>
+//     </div>
+
+//     {/* Navigation Row */}
+//     <div className="flex items-center  mt-0 justify-between">
+
+//       {/* Left Navigation */}
+//       <div className="hidden lg:flex space-x-8 ml-8">
+//         {navigation.map((item) => (
+//           <Link
+//             key={item.name}
+//             href={item.href}
+//             className={`text-sm font-medium hover:text-blue-600 ${
+//               pathname === item.href ? "text-blue-600" : "text-gray-700"
+//             }`}
+//           >
+//             {item.name}
+//           </Link>
+//         ))}
+//       </div>
+
+//       {/* Right Contact Button */}
+//       <Link
+//         href="/contact"
+//         className="px-6 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-800 mr-9  "
+//       >
+//         Contact Us →
+//       </Link>
+
+//     </div>
+//   </div>
+// </header>
+//   );
+// }
+
+
+// // components/layout/Header.tsx
+// 'use client';
+
+// import { useState, useEffect } from 'react';
+// import Link from 'next/link';
+// import Image from 'next/image';
+// import { usePathname } from 'next/navigation';
+// import { Menu, X } from 'lucide-react';
+
+// interface NavItem {
+//   name: string;
+//   href: string;
+// }
+
+// const navigation: NavItem[] = [
+//   { name: 'Home', href: '/' },
+//   { name: 'About us', href: '/about' },
+//   { name: 'Services', href: '/services' },
+//   { name: 'Experience', href: '/experience' },
+//   { name: 'Product Supply', href: '/product-supply' },
+//   { name: 'News', href: '/news' },
+// ];
+
+// export function Header() {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [isScrolled, setIsScrolled] = useState(false);
+//   const pathname = usePathname();
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setIsScrolled(window.scrollY > 10);
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   useEffect(() => {
+//     setIsOpen(false);
+//   }, [pathname]);
+
+//   return (
+// <header className="fixed top-0 w-full z-50 bg-white ">
+//   <div className="container mx-auto px-4 py-2">
+
+//     {/* Mobile Header */}
+//     <div className="flex items-center justify-between lg:hidden">
+
+//       {/* Logo */}
+//       <Link href="/">
+//         <div className="relative w-40 h-12">
+//           <Image
+//             src="/image 1.svg"
+//             alt="CS Engineering Services Logo"
+//             fill
+//             className="object-contain"
+//             priority
+//           />
+//         </div>
+//       </Link>
+
+//       {/* Mobile Menu Button */}
+//       <button
+//         onClick={() => setIsOpen(!isOpen)}
+//         className="text-black"
+//       >
+//         {isOpen ? <X size={28} /> : <Menu size={28} />}
+//       </button>
+
+//     </div>
+
+//     {/* Desktop Logo */}
+//     <div className="hidden lg:flex justify-center">
+//       <Link href="/">
+//         <div className="relative w-64 h-20">
+//           <Image
+//             src="/image 1.svg"
+//             alt="CS Engineering Services Logo"
+//             fill
+//             className="object-contain"
+//             priority
+//           />
+//         </div>
+//       </Link>
+//     </div>
+
+//     {/* Desktop Navigation */}
+//     <div className="hidden lg:flex items-center justify-between mt-0">
+
+//       {/* Left Navigation */}
+//       <div className="flex space-x-8 ml-8">
+//         {navigation.map((item) => (
+//           <Link
+//             key={item.name}
+//             href={item.href}
+//             className={`text-sm font-medium hover:text-blue-600 ${
+//               pathname === item.href ? "text-blue-600" : "text-gray-700"
+//             }`}
+//           >
+//             {item.name}
+//           </Link>
+//         ))}
+//       </div>
+
+//       {/* Contact Button */}
+//       <Link
+//         href="/contact"
+//         className="px-6 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-800 mr-9"
+//       >
+//         Contact Us →
+//       </Link>
+
+//     </div>
+
+   
+  
+//   {/* MOBILE MENU (outside container) */}
+//   {isOpen && (
+//     <div className="lg:hidden relative overflow-hidden bg-white rounded-b-2xl border-t pt-6 pb-8 flex flex-col items-center space-y-6">
+
+//       {/* Ellipse */}
+//       <Image
+//         src="/navigation ellipse.svg"
+//         alt="ellipse"
+//         width={500}
+//         height={500}
+//         className="absolute -bottom-36 -right-36 w-[420px]"
+//       />
+
+//       <div className="relative z-10 flex flex-col items-center space-y-6">
+//         {navigation.map((item) => (
+//           <Link key={item.name} href={item.href} className="text-gray-700 text-base">
+//             {item.name}
+//           </Link>
+//         ))}
+
+//         <Link
+//           href="/contact"
+//           className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-full"
+//         >
+//           Contact Us →
+//         </Link>
+//       </div>
+
+//     </div>
+//   )}
+
+
+//   </div>
+// </header>
+//   );
+// }
+
+
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
+
+interface NavItem {
+  name: string;
+  href: string;
+}
+
+const navigation: NavItem[] = [
+  { name: 'Home', href: '/' },
+  { name: 'About us', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Product Supply', href: '/product-supply' },
+  { name: 'News', href: '/news' },
+];
 
 export function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+    <header className="fixed top-0 w-full z-50 bg-white">
 
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.svg" alt="PD Engineering" width={50} height={50} />
+      {/* HEADER CONTENT */}
+      <div className="max-w-7xl mx-auto px-4 py-2 rounded-b-6xl">
+
+        {/* Mobile Header */}
+        <div className="flex items-center justify-between lg:hidden round-b-6xl">
+
+          <Link href="/">
+            <div className="relative w-40 h-12">
+              <Image
+                src="/image 1.svg"
+                alt="CS Engineering Services Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-black"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
 
-          <nav className="hidden lg:flex items-center gap-10 text-white font-medium">
-            <Link href="/" className="hover:text-[#89CA29] transition">
-              Home
-            </Link>
+        </div>
 
-            <Link href="/about" className="hover:text-[#89CA29] transition">
-              About Us
-            </Link>
-
-            {/* Services Dropdown */}
-
-            <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-[#89CA29] transition">
-                Our Services
-                <ChevronDown size={16} />
-              </button>
-
-              <div className="absolute -ml-4 left-0 top-full pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
-                <div className="bg-black border border-white/10 rounded-xl p-4 w-36 shadow-lg">
-                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
-                    Engineer
-                  </Link>
-
-                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
-                    Academy
-                  </Link>
-                </div>
-              </div>
+        {/* Desktop Logo */}
+        <div className="hidden lg:flex justify-center">
+          <Link href="/">
+            <div className="relative w-64 h-20">
+              <Image
+                src="/image 1.svg"
+                alt="CS Engineering Services Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
+          </Link>
+        </div>
 
-            <Link href="/projects" className="hover:text-[#89CA29] transition">
-              Projects
-            </Link>
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center justify-between">
 
-            <Link href="/news" className="hover:text-[#89CA29] transition">
-              News & Events
-            </Link>
-          </nav>
-
-          {/* Contact Button */}
-
-          <div className="hidden lg:block">
-            <Link
-              href="/contact"
-              className="px-6 py-2 rounded-full text-white text-md font-semibold bg-gradient-to-r from-[#6CC1FF] to-[#89CA29] hover:scale-105 transition"
-            >
-              Contact Us
-            </Link>
+          <div className="flex space-x-8 ml-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-sm font-medium hover:text-blue-600 ${
+                  pathname === item.href ? "text-blue-600" : "text-gray-700"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
 
-          {/* Mobile Menu Button */}
-
-          <button
-            className="lg:hidden text-white"
-            onClick={() => setMobileOpen(!mobileOpen)}
+          <Link
+            href="/contact"
+            className="px-6 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-800 mr-9"
           >
-            {mobileOpen ? <X /> : <Menu />}
-          </button>
+            Contact Us →
+          </Link>
+
         </div>
+
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU (FULL WIDTH) */}
+      {isOpen && (
+        <div className="lg:hidden relative overflow-hidden bg-white rounded-b-6xl border-t pt-6 pb-10 flex flex-col items-center space-y-6">
 
-      {mobileOpen && (
-        <div className="lg:hidden bg-black border-t border-white/10">
-          <div className="flex flex-col px-6 py-6 gap-4 text-white">
-            <Link href="/" className="hover:text-[#89CA29]">
-              Home
-            </Link>
+          {/* Ellipse Background */}
+          <Image
+            src="/navigation ellipse.svg"
+            alt="ellipse"
+            width={800}
+            height={800}
+            className="absolute -bottom-10 -right-10 w-[220px]"
+          />
 
-            <Link href="/about" className="hover:text-[#89CA29]">
-              About Us
-            </Link>
+          <div className="relative z-10 flex flex-col items-center space-y-6">
 
-            {/* Mobile Services */}
-
-            <button
-              onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
-              className="flex items-center justify-between hover:text-[#89CA29]"
-            >
-              Our Services
-              <ChevronDown size={18} />
-            </button>
-
-            {mobileServiceOpen && (
-              <div className="pl-4 flex flex-col gap-2 text-sm">
-                <Link href="#" className="hover:text-[#89CA29]">
-                  Engineer
-                </Link>
-
-                <Link href="#" className="hover:text-[#89CA29]">
-                  Academy
-                </Link>
-              </div>
-            )}
-
-            <Link href="/projects" className="hover:text-[#89CA29]">
-              Projects
-            </Link>
-
-            <Link href="/news" className="hover:text-[#89CA29]">
-              News & Events
-            </Link>
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-gray-700 text-base"
+              >
+                {item.name}
+              </Link>
+            ))}
 
             <Link
               href="/contact"
-              className="mt-4 text-center py-2 rounded-full bg-gradient-to-r from-blue-500 to-[#89CA29]"
+              className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-full"
             >
-              Contact Us
+              Contact Us →
             </Link>
+
           </div>
+
         </div>
       )}
+
     </header>
   );
 }

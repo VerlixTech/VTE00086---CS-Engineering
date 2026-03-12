@@ -28,3 +28,17 @@ body {
 .font-markScript {
   font-family: var(--font-markScript);
 }
+
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}

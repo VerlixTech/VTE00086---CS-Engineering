@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import { Footer } from "@/components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

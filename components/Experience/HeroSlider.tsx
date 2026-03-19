@@ -124,7 +124,7 @@ export function HeroSlider() {
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center z-10 text-center px-6">
               <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold font-satoshi mt-20">
-          #About Us
+          #Experience
         </h1>
       </div>
 

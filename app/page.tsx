@@ -8,11 +8,12 @@ import { ChannelPartners } from "@/components/ChannelPartners";
 import { ProductSection } from "@/components/ProductSection";
 import { CTASection } from "@/components/CTASection";
 import { PartnerLogos } from "@/components/PartnerLogos";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen ">
-      <Header />
+      
       <HeroSlider />
         <WelcomeSection />
             <AboutUs />
@@ -20,6 +21,7 @@ export default function Home() {
                     <ChannelPartners />
                         <ProductSection/>
                            <CTASection />
+                              
             
 
     </main>

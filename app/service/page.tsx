@@ -13,7 +13,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 export default function Service() {
   return (
     <main className="min-h-screen">
-      <Header />
+     
       <HeroSlider />
       <ServicesOfferSection />
       <ChannelPartners />

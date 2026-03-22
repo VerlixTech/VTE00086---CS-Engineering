@@ -8,7 +8,7 @@ import { ChannelPartners } from "@/components/ChannelPartners";
 import { ProductSection } from "@/components/ProductSection";
 import { CTASection } from "@/components/CTASection";
 import { PartnerLogos } from "@/components/PartnerLogos";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/footer";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 
 export default function Home() {

@@ -144,7 +144,7 @@ import Image from "next/image";
 
 export function SteamEngineeringSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white pt-4">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Top Section */}

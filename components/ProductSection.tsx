@@ -112,13 +112,13 @@ const products = [
 
 export function ProductSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Products We offer
+            Products We Offer
           </h2>
         </div>
 

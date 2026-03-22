@@ -34,7 +34,7 @@ const logos = [
 
 export function PartnerLogos() {
   return (
-    <div className="w-full overflow-hidden mb-15 ">
+    <div className="w-full overflow-hidden mb-20 ">
 
       {/* Desktop */}
       <div className="hidden md:flex justify-center flex-wrap gap-8 items-center">

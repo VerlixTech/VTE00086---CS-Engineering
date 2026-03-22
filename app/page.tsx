@@ -9,6 +9,7 @@ import { ProductSection } from "@/components/ProductSection";
 import { CTASection } from "@/components/CTASection";
 import { PartnerLogos } from "@/components/PartnerLogos";
 import { Footer } from "@/components/Footer";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
                <ServiceSection/>
                     <ChannelPartners />
                         <ProductSection/>
+                        <TestimonialsSection  />
                            <CTASection />
                               
             

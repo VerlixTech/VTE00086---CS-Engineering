@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function HeroSlider() {
   return (
-    <section className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] overflow-hidden rounded-b-4xl mb-10">
+    <section className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] overflow-hidden rounded-b-4xl ">
 
       {/* Background Image */}
       <Image

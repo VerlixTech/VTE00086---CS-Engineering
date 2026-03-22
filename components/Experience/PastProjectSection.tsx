@@ -146,7 +146,7 @@ export  function PastProjectSection() {
                 />
 
                 {/* Tag */}
-                <span className="absolute top-3 right-3 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                <span className="absolute top-3 right-3 bg-[#D60000] text-white text-xs px-2 py-1 rounded">
                   {project.tag}
                 </span>
               </div>
@@ -156,7 +156,7 @@ export  function PastProjectSection() {
 
                 {/* Location */}
                 <p className="text-xs text-gray-400 flex items-center gap-2 mb-1">
-                  <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                  <span className="w-2 h-2 bg-[#D60000] rounded-full"></span>
                   {project.location}
                 </p>
 

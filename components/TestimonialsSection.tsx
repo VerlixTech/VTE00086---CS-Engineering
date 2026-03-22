@@ -293,7 +293,7 @@ export function TestimonialsSection() {
         }
       `}</style>
 
-      <section className="bg-white py-14" ref={sectionRef}>
+      <section className="bg-white py-0" ref={sectionRef}>
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Scroll wrapper with hidden scrollbar */}
@@ -354,7 +354,9 @@ export function TestimonialsSection() {
                 className="col-block flex flex-col gap-3 justify-end"
                 style={{ transitionDelay: columns[6].delay }}
               >
-                <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
+                <div className="w-36 h-36 bg-gray-400 rounded-xl">
+                
+                </div>
                 <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
                 <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
               </div>
@@ -373,7 +375,7 @@ export function TestimonialsSection() {
           </div>
 
           {/* Title */}
-          <h2 className="text-center text-2xl md:text-3xl font-semibold mb-16">
+          <h2 className="text-center text-2xl md:text-3xl font-semibold mb-10 md:mb-16 max-md:mt-6 ">
             What Our Clients Say
           </h2>
 

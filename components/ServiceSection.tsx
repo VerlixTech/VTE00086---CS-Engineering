@@ -166,7 +166,7 @@ function ServiceCard({ service }: any) {
 
 export function ServiceSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-4">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}

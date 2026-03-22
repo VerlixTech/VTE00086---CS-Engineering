@@ -75,7 +75,7 @@ import Image from "next/image";
 export function HeroSlider() {
   return (
     <section
-      className="relative w-full h-[90vh] md:h-[100vh] lg:h-[120vh] mt-[110px] md:mt-[130px] bg-cover bg-center flex items-center justify-center overflow-hidden"
+      className="relative w-full h-[90vh] md:h-[90vh] lg:h-[120vh] mt-[10px] md:mt-[30px] bg-cover bg-center flex items-center justify-center overflow-hidden"
       style={{ backgroundImage: "url('/Rectangle 1.svg')" }}
     >
       {/* Dark overlay */}
@@ -83,7 +83,7 @@ export function HeroSlider() {
 
       {/* Content */}
       <div className="relative z-20 text-center text-white px-6 max-w-4xl md:-top-[120px]">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-satoshi">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-satoshi ">
           Engineering Excellence in Steam & Energy Solutions
         </h1>
 
@@ -124,7 +124,7 @@ export function HeroSlider() {
         alt="boilers"
         width={1200}
         height={700}
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[500px] md:w-[650px] lg:w-[900px] xl:w-[1100px] h-auto z-30"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] sm:w-[800px] md:w-[650px] lg:w-[900px] xl:w-[1100px] h-auto z-30"
       />
     </section>
   );

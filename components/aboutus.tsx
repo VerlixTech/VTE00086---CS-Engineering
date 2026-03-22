@@ -110,7 +110,7 @@ const features = [
 
 export function AboutUs() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* ================= ABOUT SECTION ================= */}
@@ -141,7 +141,7 @@ export function AboutUs() {
           <div className="flex flex-col gap-10 justify-center">
 
             {/* Vision */}
-            <div className="bg-white text-black p-8 rounded-xl shadow">
+            <div className="bg-white text-black p-8 rounded-xl shadow md:py-18">
               <h3 className="text-2xl font-bold mb-3">Our Vision</h3>
 
               <p className="text-gray-600 leading-relaxed max-w-lg">
@@ -152,7 +152,7 @@ export function AboutUs() {
             </div>
 
             {/* Mission */}
-            <div className="bg-red-600 text-white p-8 rounded-xl shadow-lg">
+            <div className="bg-red-600 text-white p-8 rounded-xl shadow-lg md:py-18 ">
               <h3 className="text-2xl font-bold mb-3">Our Mission</h3>
 
               <p className="text-sm leading-relaxed">

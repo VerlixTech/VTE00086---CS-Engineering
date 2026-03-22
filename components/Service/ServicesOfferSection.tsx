@@ -48,7 +48,7 @@ const services = [
 
 export function ServicesOfferSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white mt-16">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}

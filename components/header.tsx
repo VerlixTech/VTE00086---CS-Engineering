@@ -261,7 +261,7 @@ const navigation: NavItem[] = [
   { name: 'About us', href: '/about' },
   { name: 'Services', href: '/service' },
   { name: 'Experience', href: '/experience' },
-  { name: 'Product Supply', href: '/product-supply' },
+  { name: 'Product Supply', href: '/product' },
   { name: 'News', href: '/news' },
 ];
 

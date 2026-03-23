@@ -4,7 +4,7 @@ import { WelcomeSection } from "@/components/WelcomeSection";
 import { CTASection } from "@/components/CTASection";
 import { PartnerLogos } from "@/components/PartnerLogos";
 import { SteamEngineeringSection } from "@/components/About/SteamEngineeringSection";
-import { ChannelPartners } from "@/components/ChannelPartners";
+import { ChannelPartner } from "@/components/ChannelPartner";
 import { ServicesOfferSection } from "@/components/Service/ServicesOfferSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 
@@ -16,7 +16,7 @@ export default function Service() {
      
       <HeroSlider />
       <ServicesOfferSection />
-      <ChannelPartners />
+      <ChannelPartner />
       <TestimonialsSection />
 
 

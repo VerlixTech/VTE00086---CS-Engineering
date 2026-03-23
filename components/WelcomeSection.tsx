@@ -67,7 +67,7 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { PartnerLogos } from "@/components/PartnerLogos";
+
 
 export function WelcomeSection() {
   return (
@@ -75,7 +75,7 @@ export function WelcomeSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Partner Logos */}
-        <PartnerLogos />
+      
 
         {/* Content Section */}
         <div className="grid md:grid-cols-2 gap-10 items-start">

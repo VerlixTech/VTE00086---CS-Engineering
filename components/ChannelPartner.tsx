@@ -1,40 +1,68 @@
 
+"use client";
 
-// "use client";
+import Image from "next/image";
 
-// import Image from "next/image";
+const partners = [
+  "/OurChannel/image 4.svg",
+  "/OurChannel/image 5.svg",
+  "/OurChannel/image 6.svg",
+  "/OurChannel/image 7.svg",
+  "/OurChannel/image 9.svg",
+  "/OurChannel/image 10.svg",
+ 
+];
 
-// const logos = [
-//   "/Partner Companies/Rectangle 2.svg",
-//   "/Partner Companies/Rectangle 3.svg",
-//   "/Partner Companies/Rectangle 4.svg",
-//   "/Partner Companies/Rectangle 5.svg",
-//   "/Partner Companies/Rectangle 6.svg",
-//   "/Partner Companies/Rectangle 7.svg",
-//   "/Partner Companies/Rectangle 8.svg",
-// ];
+export function ChannelPartner() {
+  return (
+    <section className="bg-white py-10">
+      <div className="max-w-7xl mx-auto px-6">
 
-// export function PartnerLogos() {
-//   return (
-//     <div className="w-full overflow-hidden mb-20 ">
+        {/* Title */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Our Channel Partners
+          </h2>
 
-//       {/* Desktop */}
-//       <div className="hidden md:flex justify-center flex-wrap gap-8 items-center">
-//         {logos.map((logo, index) => (
-//           <Image key={index} src={logo} alt="partner" width={120} height={60} />
-//         ))}
-//       </div>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm">
+            We collaborate with globally recognized manufacturers to deliver
+            reliable and compliant industrial solutions.
+          </p>
+        </div>
 
-//       {/* Mobile auto scrolling right */}
-//       <div className="md:hidden flex gap-8 items-center w-max animate-scroll-right">
-//         {[...logos, ...logos].map((logo, index) => (
-//           <Image key={index} src={logo} alt="partner" width={150} height={90} />
-//         ))}
-//       </div>
+        {/* Logos Row */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center mb-12">
 
-//     </div>
-//   );
-// }
+          {partners.map((logo, index) => (
+            <div key={index} className="flex items-center justify-center">
+              <Image
+                src={logo}
+                alt="Partner logo"
+                width={140}
+                height={80}
+                className="object-contain  hover:opacity-100 transition"
+              />
+            </div>
+          ))}
+
+        </div>
+
+        {/* Bottom Center Logo */}
+        <div className="flex justify-center">
+          <Image
+            src= "/OurChannel/image 8.svg"
+            alt="SLV Agro"
+            width={260}
+            height={120}
+            className="object-contain"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
 
 
 // 'use client';
@@ -47,25 +75,33 @@
 // };
 
 // const row1: LogoItem[] = [
-//   { name: "MarqueesImg01", image: "/Partner Companies/Rectangle 2.svg" },
-//   { name: "MarqueesImg02", image: "/Partner Companies/Rectangle 3.svg" },
-//   { name: "MarqueesImg03", image: "/Partner Companies/Rectangle 4.svg" },
-//   { name: "MarqueesImg04", image: "/Partner Companies/Rectangle 5.svg" },
+//   { name: "MarqueesImg01", image: "/OurChannel/image 4.svg" },
+//   { name: "MarqueesImg02", image: "/OurChannel/image 5.svg" },
+//   { name: "MarqueesImg03", image: "/OurChannel/image 6.svg" },
+//   { name: "MarqueesImg04", image: "/OurChannel/image 7.svg" },
+//   { name: "MarqueesImg04", image: "/OurChannel/image 8.svg" },
+//   { name: "MarqueesImg04", image: "/OurChannel/image 9.svg" },
+//   { name: "MarqueesImg04", image: "/OurChannel/image 10.svg" },
+
 // ];
 
 // const row2: LogoItem[] = [
-//   { name: "CRB", image: "/Partner Companies/Rectangle 6.svg" },
-//   { name: "Nalanda College", image: "/Partner Companies/Rectangle 7.svg" },
-//   { name: "Elastomeric", image: "/Partner Companies/Rectangle 8.svg" },
-//   { name: "McDonalds", image: "/Partner Companies/Rectangle 9.svg" },
+//   { name: "CRB", image: "/OurChannel/image 4.svg" },
+//   { name: "Nalanda College", image: "/OurChannel/image 5.svg" },
+//   { name: "Elastomeric", image: "/OurChannel/image 6.svg" },
+//   { name: "McDonalds", image: "/OurChannel/image 7.svg" },
+//   { name: "SLV Agro", image: "/OurChannel/image 8.svg" },
+//   { name: "Brand 6", image: "/OurChannel/image 9.svg" },
+//   { name: "Brand 7", image: "/OurChannel/image 10.svg" },
+
 // ];
 
 // // Combine both rows
 // const allLogos: LogoItem[] = [...row1, ...row2];
 
-// export  function PartnerLogos() {
+// export  function ChannelPartner() {
 //   return (
-//     <section className="w-full bg-background overflow-hidden">
+//     <section className="w-full bg-background overflow-hidden mt-10">
 //       <div className="max-w-7xl mx-auto ">
 
 //         {/* Desktop View - Horizontal Marquees */}
@@ -234,144 +270,3 @@
 //     </section>
 //   );
 // }
-
-'use client';
-
-import Image from "next/image";
-
-type LogoItem = {
-  name: string;
-  image: string;
-};
-
-const row1: LogoItem[] = [
-  { name: "MarqueesImg01", image: "/Partner Companies/Rectangle 2.svg" },
-  { name: "MarqueesImg02", image: "/Partner Companies/Rectangle 3.svg" },
-  { name: "MarqueesImg03", image: "/Partner Companies/Rectangle 4.svg" },
-  { name: "MarqueesImg04", image: "/Partner Companies/Rectangle 5.svg" },
-];
-
-const row2: LogoItem[] = [
-  { name: "CRB", image: "/Partner Companies/Rectangle 6.svg" },
-  { name: "Nalanda College", image: "/Partner Companies/Rectangle 7.svg" },
-  { name: "Elastomeric", image: "/Partner Companies/Rectangle 8.svg" },
-  { name: "McDonalds", image: "/Partner Companies/Rectangle 9.svg" },
-];
-
-const allLogos: LogoItem[] = [...row1, ...row2];
-
-export function PartnerLogos() {
-  return (
-    <section className="w-full bg-white py-12">
-
-      {/* 🔥 HEADER */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-10">
-        
-        {/* Top dotted line */}
-        <div className="border-t border-dashed border-black mb-6"></div>
-
-        <h2 className="text-2xl md:text-3xl font-bold mb-3">
-          Our Trusted Customers
-        </h2>
-
-        <p className="text-gray-600 text-sm max-w-2xl mx-auto">
-          We collaborate with globally recognized manufacturers to deliver reliable and compliant industrial solutions.
-        </p>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6">
-
-        {/* Desktop */}
-        <div className="hidden md:block space-y-2">
-          
-          <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2">
-            <div className="flex w-max animate-marquee-left">
-              {[...allLogos, ...allLogos].map((logo, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-center w-60 h-28 bg-white border rounded-lg flex-shrink-0 p-4"
-                >
-                  <Image
-                    src={logo.image}
-                    alt={logo.name}
-                    width={120}
-                    height={60}
-                    className="object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2">
-            <div className="flex w-max animate-marquee-right">
-              {[...allLogos, ...allLogos].map((logo, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-center w-60 h-28 bg-white border rounded-lg flex-shrink-0 p-4"
-                >
-                  <Image
-                    src={logo.image}
-                    alt={logo.name}
-                    width={120}
-                    height={60}
-                    className="object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-
-        {/* Mobile */}
-        <div className="md:hidden flex gap-4 mt-6">
-          
-          <div className="flex-1">
-            <div className="relative h-96 overflow-hidden bg-gray-50 rounded-lg">
-              <div className="flex flex-col animate-marquee-vertical">
-                {[...allLogos, ...allLogos].map((logo, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center justify-center h-20 bg-white border rounded-lg m-2 p-2"
-                  >
-                    <Image
-                      src={logo.image}
-                      alt={logo.name}
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex-1">
-            <div className="relative h-96 overflow-hidden bg-gray-50 rounded-lg">
-              <div className="flex flex-col animate-marquee-vertical-reverse">
-                {[...allLogos, ...allLogos].map((logo, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center justify-center h-20 bg-white border rounded-lg m-2 p-2"
-                  >
-                    <Image
-                      src={logo.image}
-                      alt={logo.name}
-                      width={100}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-  );
-}

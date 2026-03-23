@@ -259,6 +259,7 @@ interface NavItem {
 const navigation: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About us', href: '/about' },
+  { name: 'Our Partners', href: '/partners' },
   { name: 'Services', href: '/service' },
   { name: 'Experience', href: '/experience' },
   { name: 'Product Supply', href: '/product' },
@@ -372,7 +373,7 @@ export function Header() {
             ))}
 
             <Link
-              href="/contact"
+              href="/contactus"
               className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-full"
             >
               Contact Us →

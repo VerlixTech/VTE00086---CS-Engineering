@@ -1,5 +1,6 @@
 
 
+
 // "use client";
 // import { Star } from "lucide-react";
 // import { useEffect, useRef } from "react";
@@ -80,13 +81,21 @@
 //           box-shadow: 0 12px 32px rgba(0,0,0,0.10);
 //           transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
 //         }
+//         /* Hide scrollbar for all browsers */
+//         .scrollbar-hide {
+//           -ms-overflow-style: none;  /* IE and Edge */
+//           scrollbar-width: none;     /* Firefox */
+//         }
+//         .scrollbar-hide::-webkit-scrollbar {
+//           display: none; /* Chrome, Safari, Opera */
+//         }
 //       `}</style>
 
-//       <section className="bg-white py-14" ref={sectionRef}>
+//       <section className="bg-white py-0" ref={sectionRef}>
 //         <div className="max-w-7xl mx-auto px-6">
 
-//           {/* Scroll wrapper */}
-//           <div className="overflow-x-auto  -mx-6 md:mx-0">
+//           {/* Scroll wrapper with hidden scrollbar */}
+//           <div className="overflow-x-auto scrollbar-hide -mx-6 md:mx-0">
 //             <div className="flex gap-3 opacity-40 items-end h-150 w-max px-6 md:w-full md:justify-center md:px-0">
 
 //               {/* Column 1 */}
@@ -143,7 +152,9 @@
 //                 className="col-block flex flex-col gap-3 justify-end"
 //                 style={{ transitionDelay: columns[6].delay }}
 //               >
-//                 <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
+//                 <div className="w-36 h-36 bg-gray-400 rounded-xl">
+                
+//                 </div>
 //                 <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
 //                 <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
 //               </div>
@@ -162,7 +173,7 @@
 //           </div>
 
 //           {/* Title */}
-//           <h2 className="text-center text-2xl md:text-3xl font-semibold mb-16">
+//           <h2 className="text-center text-2xl md:text-3xl font-semibold mb-10 md:mb-16 max-md:mt-6 ">
 //             What Our Clients Say
 //           </h2>
 
@@ -206,6 +217,7 @@
 "use client";
 import { Star } from "lucide-react";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -285,11 +297,11 @@ export function TestimonialsSection() {
         }
         /* Hide scrollbar for all browsers */
         .scrollbar-hide {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;     /* Firefox */
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
         .scrollbar-hide::-webkit-scrollbar {
-          display: none; /* Chrome, Safari, Opera */
+          display: none;
         }
       `}</style>
 
@@ -298,7 +310,7 @@ export function TestimonialsSection() {
 
           {/* Scroll wrapper with hidden scrollbar */}
           <div className="overflow-x-auto scrollbar-hide -mx-6 md:mx-0">
-            <div className="flex gap-3 opacity-40 items-end h-150 w-max px-6 md:w-full md:justify-center md:px-0">
+            <div className="flex gap-3  items-end h-150 w-max px-6 md:w-full md:justify-center md:px-0">
 
               {/* Column 1 */}
               <div
@@ -306,8 +318,22 @@ export function TestimonialsSection() {
                 className="col-block flex flex-col gap-3 justify-end mb-3"
                 style={{ transitionDelay: columns[0].delay }}
               >
-                <div className="w-36 h-50 bg-gray-400 rounded-xl"></div>
-                <div className="w-36 h-52 bg-gray-400 rounded-xl"></div>
+                <div className="relative w-36 h-50 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg" // Replace with your actual image
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-36 h-52 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* Column 2 */}
@@ -316,37 +342,79 @@ export function TestimonialsSection() {
                 className="col-block flex flex-col gap-3 justify-end"
                 style={{ transitionDelay: columns[1].delay }}
               >
-                <div className="w-36 h-70 bg-gray-400 rounded-xl"></div>
-                <div className="w-36 h-48 bg-gray-400 rounded-xl"></div>
+                <div className="relative w-36 h-70 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-36 h-48 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* Column 3 */}
               <div
                 ref={(el) => { colRefs.current[2] = el; }}
-                className="col-block w-36 h-90 bg-gray-400 rounded-xl self-end mb-17"
+                className="col-block relative w-36 h-90 bg-gray-400 rounded-xl overflow-hidden self-end mb-17"
                 style={{ transitionDelay: columns[2].delay }}
-              ></div>
+              >
+                <Image
+                  src="/About/Rectangle 9.svg"
+                  alt="Building"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               {/* Column 4 */}
               <div
                 ref={(el) => { colRefs.current[3] = el; }}
-                className="col-block w-36 h-90 bg-gray-400 rounded-xl self-end mb-46"
+                className="col-block relative w-36 h-90 bg-gray-400 rounded-xl overflow-hidden self-end mb-46"
                 style={{ transitionDelay: columns[3].delay }}
-              ></div>
+              >
+                <Image
+                  src="/ChannelPartners/mysilo image 5.svg"
+                  alt="Building"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               {/* Column 5 */}
               <div
                 ref={(el) => { colRefs.current[4] = el; }}
-                className="col-block w-36 h-90 bg-gray-400 rounded-xl self-end mb-46"
+                className="col-block relative w-36 h-90 bg-gray-400 rounded-xl overflow-hidden self-end mb-46"
                 style={{ transitionDelay: columns[4].delay }}
-              ></div>
+              >
+                <Image
+                  src="/About/Rectangle 9.svg"
+                  alt="Building"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               {/* Column 6 */}
               <div
                 ref={(el) => { colRefs.current[5] = el; }}
-                className="col-block w-36 h-90 bg-gray-400 rounded-xl self-end mb-17"
+                className="col-block relative w-36 h-90 bg-gray-400 rounded-xl overflow-hidden self-end mb-17"
                 style={{ transitionDelay: columns[5].delay }}
-              ></div>
+              >
+                <Image
+                  src="/About/Rectangle 9.svg"
+                  alt="Building"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               {/* Column 7 */}
               <div
@@ -354,11 +422,30 @@ export function TestimonialsSection() {
                 className="col-block flex flex-col gap-3 justify-end"
                 style={{ transitionDelay: columns[6].delay }}
               >
-                <div className="w-36 h-36 bg-gray-400 rounded-xl">
-                
+                <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
-                <div className="w-36 h-36 bg-gray-400 rounded-xl"></div>
+                <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* Column 8 */}
@@ -367,8 +454,22 @@ export function TestimonialsSection() {
                 className="col-block flex flex-col gap-3 justify-end mb-3"
                 style={{ transitionDelay: columns[7].delay }}
               >
-                <div className="w-36 h-46 bg-gray-400 rounded-xl"></div>
-                <div className="w-36 h-46 bg-gray-400 rounded-xl"></div>
+                <div className="relative w-36 h-46 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-36 h-46 bg-gray-400 rounded-xl overflow-hidden">
+                  <Image
+                    src="/About/Rectangle 9.svg"
+                    alt="Building"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
             </div>

@@ -530,7 +530,7 @@ const detailedPartners = [
     name: "MAXTHERM INDIA PVT LTD",
     logo: "/ChannelPartners/maxtherm image 4.svg",
     description:
-      "Maxtherm India is a Chennai based reputed manufacturer of steam boilers, thermic fluid heaters, hot water generators & hot air generators.",
+      "Maxtherm India is a Chennai based reputed manufacturer of steam boilers, thermic fluid heaters, Hot  water generators & Hot air generators. Maxtherm india is providing industries with reliable, energy ef icient steam systems suitable for biomass, oil, gas and other solid fuels. Maxtherm's proven designs,  combined with local installation, commissioning, and after-sales service, ensure compliance with Sri  Lankan industrial and safety standards across food processing, rice milling, tea, textile, coconut and  other manufacturing sectors.",
     images: [
       "/ChannelPartners/maxtherm image 5.svg",
       "/ChannelPartners/maxtherm image 6.svg",
@@ -541,7 +541,7 @@ const detailedPartners = [
     name: "ARMSTRONG INTERNATIONAL",
     logo: "/ChannelPartners/amstrong  image 4.svg",
     description:
-      "Armstrong provides intelligent system solutions for industrial applications with energy efficiency.",
+      "Armstrong International is a USA based 100-year-old globally recognized provider of steam,  condensate, and thermal energy management solutions for industrial and commercial applications. Its  products including steam traps, low meters, bellow seal valves, control systems, condensate recovery  systems and heat transfer equipment are widely used to improve energy ef iciency, system reliability,  and operational safety. Armstrong solutions are supplied and supported for Sri Lankan industries such  as rice milling, food processing, tea, textiles, and manufacturing",
     images: [
       "/ChannelPartners/amstrong  image 6.svg",
       "/ChannelPartners/amstrong  image 5.svg",
@@ -552,7 +552,7 @@ const detailedPartners = [
     name: "MYSILO",
     logo: "/ChannelPartners/mysilo image 6.svg",
     description:
-      "Mysilo provides advanced grain storage and silo systems for modern agriculture.",
+      "Mysilo is an Turkey based internationally recognized manufacturer of grain storage silos  and handling  equipment, offering complete solutions from paddy intake to inished rice storage. Mysilo systems are  designed for high ef iciency, durability, and automation, supporting modern rice mills and agro processing facilities. Mysilo storage solutions are supplied and supported for Sri Lankan industries  such as rice milling , feed mills and other grain storages.",
     images: [
       "/ChannelPartners/mysilo image 7.svg",
       "/ChannelPartners/mysilo image 5.svg",
@@ -563,7 +563,7 @@ const detailedPartners = [
     name: "SURI ENGINEERS",
     logo: "/ChannelPartners/suri 2.svg",
     description:
-      "Suri Engineers provide industrial boiler and engineering solutions.",
+      "Suri Engineers is an experienced manufacturer based in Hyderabad specializing in modern rice mill  machinery and agro-processing equipment. Their product range supports ef icient paddy processing,  high recovery, and reliable operation in modern rice mills. Suri Engineers' equipment is supplied,  installed, and supported in Sri Lanka as part of complete A–Z rice mill solutions.",
     images: [
       "/ChannelPartners/suri 3.svg",
       "/ChannelPartners/suri 4.svg",
@@ -571,10 +571,10 @@ const detailedPartners = [
     ],
   },
   {
-    name: "TES",
+    name: "THERMAL ENERGY SOLUTIONS",
     logo: "/ChannelPartners/tes 1.svg",
     description:
-      "TES offers energy-efficient thermal engineering solutions.",
+      "Thermal Energy Solutions is a specialist provider of industrial radiators, heat exchangers, and thermal  management systems. Their equipment is supplied, installed, and supported in Sri Lanka, delivering  ef icient heat transfer, energy savings, and reliable operation across boilers and other industrial  processes. Mainly TES has the presence in Rice mills , Coconut & Tea in sri lanka",
     images: [
       "/ChannelPartners/tes 2.svg",
       "/ChannelPartners/tes 3.svg",
@@ -582,10 +582,10 @@ const detailedPartners = [
     ],
   },
   {
-    name: "SLV AGRO",
+    name: "SLV AGRO INDUSTRIES",
     logo: "/ChannelPartners/slv agro 2.svg",
     description:
-      "SLV Agro specializes in agricultural processing and storage systems.",
+      "SLV Agro Industries based in Bangalore, supplies and integrates paddy driers and parboiling machinery  sourced from reputed Indian manufacturers. These systems are designed for uniform moisture  reduction, improved rice quality, and ef icient parboiling operations, while minimizing grain breakage  and energy consumption. All equipment is engineered, installed, and commissioned to suit Sri Lankan  paddy varieties, production capacities, and local operating conditions",
     images: [
       "/ChannelPartners/slv agro 3.svg",
       "/ChannelPartners/slv agro 1.svg",
@@ -596,7 +596,7 @@ const detailedPartners = [
     name: "NALCO WATER",
     logo: "/ChannelPartners/nalco 4.svg",
     description:
-      "Nalco Water provides water treatment and process improvement solutions.",
+      "NALCO is a Singapore based global leader in water treatment and boiler chemical solutions, providing  products that ensure optimal boiler performance, corrosion prevention, and scale control. NALCO's  chemicals are supplied and supported in Sri Lanka, helping industries maintain ef icient, safe, and long lasting boiler operations We also join hands with NALCO on water treatment plants design and installation works for softner  plants, DM plants and RO plants specifical",
     images: [
       "/ChannelPartners/nalco 3.svg",
       "/ChannelPartners/nalco 2.svg",

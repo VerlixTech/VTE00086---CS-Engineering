@@ -138,7 +138,7 @@ import { MapPin, Phone, Mail, User, AtSign } from "lucide-react";
  
 export function ContactSection() {
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
  
         {/* TOP: FORM + MAP */}
@@ -219,11 +219,11 @@ export function ContactSection() {
           <div className="relative flex flex-col items-center">
             {/* Floating Icon */}
             <div className="absolute -top-8 z-10 bg-white rounded-full p-4 shadow-md">
-              <MapPin size={28} className="text-black" />
+              <MapPin size={38} className="text-black" />
             </div>
             {/* Card — badge shape: large top radius, smaller bottom radius */}
             <div className="w-full bg-red-600 text-white pt-14 pb-8 px-6 text-center shadow-md"
-              style={{ borderRadius: "80px 80px 16px 16px" }}>
+              style={{ borderRadius: "120px 120px 16px 16px" }}>
               <h3 className="font-semibold text-lg mb-2">Visit Us</h3>
               <p className="text-sm leading-relaxed">
                 58/173, Thammannakulama,<br />
@@ -234,11 +234,11 @@ export function ContactSection() {
  
           {/* Call Us */}
           <div className="relative flex flex-col items-center">
-            <div className="absolute -top-8 z-10 bg-white rounded-full p-4 shadow-md">
-              <Phone size={28} className="text-black" />
+            <div className="absolute -top-16 z-10 bg-white rounded-full p-4 shadow-md">
+              <Phone size={38} className="text-black" />
             </div>
             <div className="w-full bg-red-600 text-white pt-14 pb-8 px-6 text-center shadow-md"
-              style={{ borderRadius: "80px 80px 16px 16px" }}>
+              style={{ borderRadius: "120px 120px 16px 16px" }}>
               <h3 className="font-semibold text-lg mb-2">Call Us</h3>
               <p className="text-sm leading-relaxed">
                 +94 (0) 71 143 6850<br />
@@ -250,10 +250,10 @@ export function ContactSection() {
           {/* Email */}
           <div className="relative flex flex-col items-center">
             <div className="absolute -top-8 z-10 bg-white rounded-full p-4 shadow-md">
-              <Mail size={28} className="text-black" />
+              <Mail size={38} className="text-black" />
             </div>
             <div className="w-full bg-red-600 text-white pt-14 pb-8 px-6 text-center shadow-md"
-              style={{ borderRadius: "80px 80px 16px 16px" }}>
+              style={{ borderRadius: "120px 120px 16px 16px" }}>
               <h3 className="font-semibold text-lg mb-2">E-mail</h3>
               <p className="text-sm leading-relaxed break-words">
                 cs.engserv@gmail.com<br />

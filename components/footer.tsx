@@ -342,43 +342,29 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Company */}
-          {/* <div className="lg:col-span-2">
+          <div className="lg:col-span-2">
             <h3 className="text-black font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Service', 'Experience', 'Product Supply'].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-red-500 transition-colors text-sm">
-                    {item}
-                  </Link>
+                {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: 'Our Partners', href: '/partners' },
+                { label: "Service", href: "/services" },
+                { label: "Experience", href: "/experience" },
+                { label: "Product Supply", href: "/products" },
+                { label: 'News', href: '/news' },
+                ].map((item) => (
+                <li key={item.label}>
+                    <Link
+                    href={item.href}
+                    className="text-gray-600 hover:text-red-500 transition-colors text-sm"
+                    >
+                    {item.label}
+                    </Link>
                 </li>
-              ))}
+                ))}
             </ul>
-          </div> */}
-
-          <div className="lg:col-span-2">
-  <h3 className="text-black font-semibold text-lg mb-4">Company</h3>
-  <ul className="space-y-3">
-    {[
-      { label: "Home", href: "/" },
-      { label: "About Us", href: "/about" },
-      { label: 'Our Partners', href: '/partners' },
-      { label: "Service", href: "/services" },
-      { label: "Experience", href: "/experience" },
-      { label: "Product Supply", href: "/products" },
-      { label: 'News', href: '/news' },
-    ].map((item) => (
-      <li key={item.label}>
-        <Link
-          href={item.href}
-          className="text-gray-600 hover:text-red-500 transition-colors text-sm"
-        >
-          {item.label}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+            </div>
 
           {/* Capabilities */}
           <div className="lg:col-span-3">

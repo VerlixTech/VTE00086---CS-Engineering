@@ -249,13 +249,23 @@ const row1: LogoItem[] = [
   { name: "MarqueesImg02", image: "/Partner Companies/Rectangle 3.svg" },
   { name: "MarqueesImg03", image: "/Partner Companies/Rectangle 4.svg" },
   { name: "MarqueesImg04", image: "/Partner Companies/Rectangle 5.svg" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 1.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 2.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 3.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 4.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 5.png" },
+  
+
 ];
 
 const row2: LogoItem[] = [
   { name: "CRB", image: "/Partner Companies/Rectangle 6.svg" },
   { name: "Nalanda College", image: "/Partner Companies/Rectangle 7.svg" },
   { name: "Elastomeric", image: "/Partner Companies/Rectangle 8.svg" },
-  { name: "McDonalds", image: "/Partner Companies/Rectangle 9.svg" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 6.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 7.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 8.png" },
+  { name: "MarqueesImg04", image: "/Partner Companies/logo 9.png" },
 ];
 
 const allLogos: LogoItem[] = [...row1, ...row2];
@@ -284,7 +294,7 @@ export function PartnerLogos() {
         {/* Desktop */}
         <div className="hidden md:block space-y-2">
           
-          <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2">
+          <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2 gap-2">
             <div className="flex w-max animate-marquee-left">
               {[...allLogos, ...allLogos].map((logo, idx) => (
                 <div
@@ -294,7 +304,7 @@ export function PartnerLogos() {
                   <Image
                     src={logo.image}
                     alt={logo.name}
-                    width={120}
+                    width={100}
                     height={60}
                     className="object-contain"
                   />
@@ -313,7 +323,7 @@ export function PartnerLogos() {
                   <Image
                     src={logo.image}
                     alt={logo.name}
-                    width={120}
+                    width={100}
                     height={60}
                     className="object-contain"
                   />
@@ -327,7 +337,7 @@ export function PartnerLogos() {
         {/* Mobile */}
         <div className="md:hidden flex gap-4 mt-6">
           
-          <div className="flex-1">
+          <div className="flex-1 ">
             <div className="relative h-96 overflow-hidden bg-gray-50 rounded-lg">
               <div className="flex flex-col animate-marquee-vertical">
                 {[...allLogos, ...allLogos].map((logo, idx) => (

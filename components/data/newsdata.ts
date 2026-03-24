@@ -1,0 +1,1 @@
+Using the above data set, provide news cards as provided. Clicking on each card should navigate to the full page and display the relevant details.

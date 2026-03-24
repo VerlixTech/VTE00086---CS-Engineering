@@ -4,7 +4,7 @@ import { CTASection } from "@/components/CTASection";
 import { PartnerLogos } from "@/components/PartnerLogos";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PastProjectSection } from "@/components/Experience/PastProjectSection";
-import { ProjectGallery } from "@/components/Experience/ProjectGallrey";
+import { ProjectGallery } from "@/components/Experience/ProjectGallery";
 
 
 

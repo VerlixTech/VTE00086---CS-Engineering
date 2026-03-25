@@ -61,13 +61,29 @@ export function ServicesOfferSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`grid md:grid-cols-2 gap-10 items-center ${
-                index % 2 !== 0 ? "md:[&>div:first-child]:order-2" : ""
-              }`}
+              className="grid md:grid-cols-2 gap-10 items-center"
             >
+              {/* Image – always first on mobile */}
+              <div
+                className={`rounded-xl overflow-hidden ${
+                  index % 2 !== 0 ? "md:order-2" : ""
+                }`}
+              >
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-              {/* Text */}
-              <div>
+              {/* Text – always second on mobile */}
+              <div
+                className={`${
+                  index % 2 !== 0 ? "md:order-1" : ""
+                }`}
+              >
                 <h3 className="text-xl font-semibold mb-3">
                   {service.title}
                 </h3>
@@ -87,18 +103,6 @@ export function ServicesOfferSection() {
                   Contact for More →
                 </Link>
               </div>
-
-              {/* Image */}
-              <div className="rounded-xl overflow-hidden">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
             </div>
           ))}
 

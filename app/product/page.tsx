@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { HeroSlider } from "@/components/Product/HeroSlider";
 import { CTASection } from "@/components/CTASection";
-import { ChannelPartners } from "@/components/ChannelPartners";
+import { ChannelPartner } from "@/components/ChannelPartner";
 import { ProductSection } from "@/components/ProductSection";
 
 
@@ -14,7 +14,7 @@ export default function Product() {
       
       
      
-      <ChannelPartners />
+      <ChannelPartner />
       <CTASection />
       
     </main>

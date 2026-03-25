@@ -90,7 +90,7 @@ export function HeroSlider() {
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            href="/consultation"
+            href="/contact"
             className="group inline-flex items-center px-5 py-3 bg-white text-black font-medium rounded-full transition-all duration-300 text-sm md:text-md"
           >
             Request a Consultation
@@ -98,7 +98,7 @@ export function HeroSlider() {
           </Link>
 
           <Link
-            href="/services"
+            href="/service"
             className="inline-flex items-center px-5 py-3 bg-transparent hover:bg-white/10 text-white font-medium rounded-full border border-white transition-all duration-300 text-sm md:text-md"
           >
             View Our Services

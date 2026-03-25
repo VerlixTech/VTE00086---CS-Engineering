@@ -373,7 +373,7 @@ export function Header() {
             ))}
 
             <Link
-              href="/contactus"
+              href="/contact"
               className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-full"
             >
               Contact Us →

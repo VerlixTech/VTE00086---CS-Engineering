@@ -458,7 +458,8 @@ export function Footer() {
             <Link href="#" className="hover:text-red-500 transition-colors">Terms of Use</Link>
           </div>
 
-          <p>© 2026 CS Engineering Services. All rights reserved.</p>
+          {/* <p>© 2026 CS Engineering Services. All rights reserved.</p> */}
+          <p>© 2026 VERLIXTECH (PVT) LTD.ALL RIGHTS RESERVED.</p>
         </div>
 
       </div>

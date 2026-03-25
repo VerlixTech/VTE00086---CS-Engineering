@@ -9,7 +9,7 @@ export function CTASection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* CTA Card */}
-        <div className="relative bg-red-600 rounded-2xl overflow-hidden py-20 px-10 text-center">
+        <div className="relative bg-[#D60000] rounded-2xl overflow-hidden py-20 px-10 text-center">
 
           {/* Top Left Ellipse */}
           <Image

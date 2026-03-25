@@ -292,14 +292,14 @@ export function PartnerLogos() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Desktop */}
-        <div className="hidden md:block space-y-2">
+        <div className="hidden md:block space-y-2 ">
           
           <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2 gap-2">
-            <div className="flex w-max animate-marquee-left">
+            <div className="flex w-max animate-marquee-left gap-4">
               {[...allLogos, ...allLogos].map((logo, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center justify-center w-60 h-28 bg-white border rounded-lg flex-shrink-0 p-4"
+                  className="flex items-center justify-center w-60 h-28 bg-white border rounded-lg flex-shrink-0 p-4 "
                 >
                   <Image
                     src={logo.image}
@@ -314,7 +314,7 @@ export function PartnerLogos() {
           </div>
 
           <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 py-2">
-            <div className="flex w-max animate-marquee-right">
+            <div className="flex w-max animate-marquee-right gap-4">
               {[...allLogos, ...allLogos].map((logo, idx) => (
                 <div
                   key={idx}

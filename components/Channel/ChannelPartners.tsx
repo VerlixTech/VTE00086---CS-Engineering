@@ -607,9 +607,9 @@ const detailedPartners = [
 
 export function ChannelPartners() {
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
+    <section className="relative pt-12 md:py-20 overflow-hidden">
       {/* Red vector background – behind all content */}
-     <div className="absolute left-0 top-0 w-[100%] h-full z-30 pointer-events-none overflow-hidden">
+     <div className="absolute left-0 top-0 w-[100%] h-full z-30 pointer-events-none overflow-hidden hidden md:block">
   <Image
     src="/ChannelPartners/Vector 2.png"
     alt="background shape"

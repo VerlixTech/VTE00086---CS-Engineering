@@ -1,7 +1,10 @@
 import { Header } from "@/components/header"
-import { ContactSection } from "@/components/contact-section"
+import { ContactSection } from "@/components/Contactus/ContactSection"
 import { Footer } from "@/components/footer"
 import type { Metadata } from "next"
+import { HeroSlider } from "@/components/Contactus/HeroSlider"
+import { ChannelPartners } from "@/components/Channel/ChannelPartners"
+import { CTASection } from "@/components/CTASection"
 
 export const metadata: Metadata = {
   title: "Contact Us - SAGA Engineering | Get In Touch",
@@ -26,7 +29,10 @@ export default function ContactPage() {
     <main className="min-h-screen bg-white">
       <Header />
       <div className="pt-20">
+        <HeroSlider />
         <ContactSection />
+        <CTASection />
+       
       </div>
     </main>
   )

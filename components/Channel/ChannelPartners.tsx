@@ -536,6 +536,7 @@ const detailedPartners = [
       "/ChannelPartners/maxtherm image 6.svg",
       "/ChannelPartners/maxtherm image 7.svg",
     ],
+    website: "https://www.maxthermindia.in/",
   },
   {
     name: "ARMSTRONG INTERNATIONAL",
@@ -547,6 +548,7 @@ const detailedPartners = [
       "/ChannelPartners/amstrong  image 5.svg",
       "/ChannelPartners/amstrong  image 7.svg",
     ],
+    website: "https://armstronginternational.com/",
   },
   {
     name: "MYSILO",
@@ -558,6 +560,7 @@ const detailedPartners = [
       "/ChannelPartners/mysilo image 5.svg",
       "/ChannelPartners/mysilo image 4.svg",
     ],
+    website: "https://mysilo.com/en/",
   },
   {
     name: "SURI ENGINEERS",
@@ -569,6 +572,7 @@ const detailedPartners = [
       "/ChannelPartners/suri 4.svg",
       "/ChannelPartners/suri 1.svg",
     ],
+    website: "https://www.suriengineers.co.in/",
   },
   {
     name: "THERMAL ENERGY SOLUTIONS",
@@ -580,17 +584,19 @@ const detailedPartners = [
       "/ChannelPartners/tes 3.svg",
       "/ChannelPartners/tes 4.svg",
     ],
+    website: "https://www.finnedtubeindia.com/",
   },
   {
-    name: "SLV AGRO INDUSTRIES",
-    logo: "/ChannelPartners/slv agro 2.svg",
+    name: "SKF Elixer India PVT LTD",
+    logo: "/OurChannel/SKF.png",
     description:
-      "SLV Agro Industries based in Bangalore, supplies and integrates paddy driers and parboiling machinery  sourced from reputed Indian manufacturers. These systems are designed for uniform moisture  reduction, improved rice quality, and ef icient parboiling operations, while minimizing grain breakage  and energy consumption. All equipment is engineered, installed, and commissioned to suit Sri Lankan  paddy varieties, production capacities, and local operating conditions",
+      "SKF Elixer India Pvt Ltd is a leading engineering solutions provider specializing in rice processing systems, mineral water purification, and wastewater treatment technologies. With over 30 years of industry experience, the company delivers innovative, sustainable, and fully integrated solutions designed to enhance operational efficiency, product quality, and environmental compliance. Trusted by top agro-industries and manufacturers, SKF Elixer combines advanced technology with proven expertise to support businesses in scaling efficiently and achieving long-term success.",
     images: [
-      "/ChannelPartners/slv agro 3.svg",
-      "/ChannelPartners/slv agro 1.svg",
-      "/ChannelPartners/slv agro 4.svg",
+      "/ChannelPartners/SKF (1).jpeg",
+      "/ChannelPartners/SKF (2).jpeg",
+      "/ChannelPartners/SKF (3).jpeg",
     ],
+    website: "https://skfelixer.com/",
   },
   {
     name: "NALCO WATER",
@@ -602,6 +608,7 @@ const detailedPartners = [
       "/ChannelPartners/nalco 2.svg",
       "/ChannelPartners/nalco 1.svg",
     ],
+    website: "https://www.ecolab.com/nalco-water",
   },
 ];
 
@@ -649,7 +656,7 @@ export function ChannelPartners() {
 
         <div className="flex justify-center mb-16">
           <Image
-            src="/OurChannel/image 8.svg"
+            src="/OurChannel/SKF.png"
             alt="SLV Agro"
             width={260}
             height={120}
@@ -700,9 +707,17 @@ export function ChannelPartners() {
                     />
                   ))}
                 </div>
-                <button className="bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition">
+                {/* <button className="bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition">
                   Visit Website →
-                </button>
+                </button> */}
+                <a
+                  href={partner.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition"
+                >
+                  Visit Website →
+                </a>
               </div>
             </div>
           ))}

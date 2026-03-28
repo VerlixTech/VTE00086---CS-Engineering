@@ -102,12 +102,12 @@ import { ArrowRight } from "lucide-react";
 const products = [
   { name: "Steam Boilers", image: "/ProductSection/genarator.svg" },
   { name: "Thermic Fluid Heaters", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Hot water Generators", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Water Treatment Solutions", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Environmental solutions", image: "/ProductSection/genarator.svg" },
-  { name: "Steam radiators", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Blowers", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Steam accessories", image: "/ProductSection/Fluid Heater.svg" },
+  { name: "Hot water Generators", image: "/ProductSection/Hot Water Genarator.jpeg" },
+  { name: "Water Treatment Solutions", image: "/ProductSection/water treatment.jpg" },
+  { name: "Environmental solutions", image: "/ProductSection/environmental.webp" },
+  { name: "Steam radiators", image: "/ProductSection/Steam Radiator.jpeg" },
+  { name: "Blowers", image: "/ProductSection/Blowers.jpg" },
+  { name: "Steam accessories", image: "/ProductSection/steam accessories.jpg" },
 ];
 
 export function ProductSection() {

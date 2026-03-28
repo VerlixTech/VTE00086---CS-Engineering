@@ -278,7 +278,7 @@ export function PartnerLogos() {
       <div className="max-w-7xl mx-auto px-6 text-center mb-10">
         
         {/* Top dotted line */}
-        <div className="border-t border-dashed border-black mb-6"></div>
+        <div className="border-t border-dashed border-gray-400 mb-6 "></div>
 
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
           Our Trusted Customers

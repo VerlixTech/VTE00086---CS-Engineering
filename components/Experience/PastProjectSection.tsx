@@ -72,15 +72,15 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    image: "/p1.jpg",
+    image: "/Experience/Araliya Rice.jpg",
     tag: "OVERHAUL",
     location: "POLONNARUWA",
-    title: "Lakbima Rice Mill (Aralagan)",
+    title: "Lakbima Rice Mill (Araliya)",
     desc: "Complete boiler tube replacement and systematic overhaul to enhance steam production efficiency.",
   },
   {
     id: 2,
-    image: "/p2.jpg",
+    image: "/Experience/nisudha.jpg",
     tag: "YEARLY",
     location: "POLONNARUWA",
     title: "Nishudha Rice Products",
@@ -88,7 +88,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "/p3.jpg",
+    image: "/Experience/Tyre.jpg ",
     tag: "MULTI-UNIT",
     location: "HORANA",
     title: "Ferentino Tyres",
@@ -96,7 +96,7 @@ const projects = [
   },
   {
     id: 4,
-    image: "/p4.jpg",
+    image: "/Experience/Ocean-S.png",
     tag: "3 TON",
     location: "PUTTLAM",
     title: "Ocean Food Manufacturing",
@@ -104,19 +104,35 @@ const projects = [
   },
   {
     id: 5,
-    image: "/p5.jpg",
+    image: "/Experience/sanmic.jpg",
     tag: "DUAL SITE",
-    location: "ANURADHAPURA",
-    title: "Sasmi Foods",
+    location: "ANURADHAPURA & DIVULAPITIYA",
+    title: "Sanmic Foods",
     desc: "Comprehensive overhauling of 4 ton and 6 ton Thermax boilers across two major processing facilities.",
   },
   {
     id: 6,
-    image: "/p6.jpg",
+    image: "/Experience/download.jpg",
     tag: "HEATER",
-    location: "THALAWATHUGODA",
+    location: "THULHIRIYA",
     title: "MAS Fabrics",
     desc: "Maxtherm 3 Mn heater overhaul and specialized refractory work for high-temperature textile processing.",
+  },
+  {
+    id: 7,
+    image: "/Experience/nakiyadeniya.jpg",
+    tag: "HEATER",
+    location: "GALLE",
+    title: "Nakiyadeniya Oil Mills",
+    desc: "Specialized chimney cup brushing and protective heat-resistant painting for corrosion control.",
+  },
+  {
+    id: 8,
+    image: "/Experience/Elasto.jpg",
+    tag: "HEATER",
+    location: "HORANA",
+    title: "Elastomeric",
+    desc: "Refractory overhauling and APH tube replacement to restore peak heat exchange performance.",
   },
 ];
 

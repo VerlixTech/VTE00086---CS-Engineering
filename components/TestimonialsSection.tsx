@@ -320,7 +320,7 @@ export function TestimonialsSection() {
               >
                 <div className="relative w-36 h-50 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg" // Replace with your actual image
+                    src="/ServiceSection/Dasa Cocos (pvt) Ltd (5).jpeg" 
                     alt="Building"
                     fill
                     className="object-cover"
@@ -328,7 +328,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="relative w-36 h-52 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/ChannelPartners/nalco 3.svg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -352,7 +352,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="relative w-36 h-48 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/ServiceSection/Wichy plantations/Wichy plantations (10).jpeg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -395,7 +395,7 @@ export function TestimonialsSection() {
                 style={{ transitionDelay: columns[4].delay }}
               >
                 <Image
-                  src="/About/Rectangle 9.svg"
+                  src="/ProductSection/water treatment.jpg"
                   alt="Building"
                   fill
                   className="object-cover"
@@ -409,7 +409,7 @@ export function TestimonialsSection() {
                 style={{ transitionDelay: columns[5].delay }}
               >
                 <Image
-                  src="/About/Rectangle 9.svg"
+                  src="/ServiceSection/Wichy plantations/Wichy plantations (6).jpeg"
                   alt="Building"
                   fill
                   className="object-cover"
@@ -476,12 +476,12 @@ export function TestimonialsSection() {
           </div>
 
           {/* Title */}
-          <h2 className="text-center text-2xl md:text-3xl font-semibold mb-10 md:mb-16 max-md:mt-6 ">
+          {/* <h2 className="text-center text-2xl md:text-3xl font-semibold mb-10 md:mb-16 max-md:mt-6 ">
             What Our Clients Say
-          </h2>
+          </h2> */}
 
           {/* Cards */}
-          <div className="grid md:grid-cols-3 gap-8 ">
+          {/* <div className="grid md:grid-cols-3 gap-8 ">
             {testimonials.map((item, index) => (
               <div
                 key={index}
@@ -502,14 +502,14 @@ export function TestimonialsSection() {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Slider dots */}
-          <div className="flex justify-center mt-10 gap-2">
+          {/* <div className="flex justify-center mt-10 gap-2">
             <span className="w-2 h-2 bg-red-500 rounded-full"></span>
             <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
             <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

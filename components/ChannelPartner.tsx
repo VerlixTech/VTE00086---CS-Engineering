@@ -10,6 +10,7 @@ const partners = [
   "/OurChannel/image 7.svg",
   "/OurChannel/image 9.svg",
   "/OurChannel/image 10.svg",
+
  
 ];
 
@@ -50,7 +51,7 @@ export function ChannelPartner() {
         {/* Bottom Center Logo */}
         <div className="flex justify-center">
           <Image
-            src= "/OurChannel/image 8.svg"
+            src= "/OurChannel/SKF.png"
             alt="SLV Agro"
             width={260}
             height={120}

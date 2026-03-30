@@ -26,9 +26,9 @@ export function Footer() {
             </div>
 
             <p className="text-sm text-gray-600 leading-relaxed">
-              We are a lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              CS Engineering Services is a energy services engineering company that provides a 
+              strategic, flexible, experienced and innovative approach to delivering engineering 
+              and management consultancy services for its clients.
             </p>
 
             {/* Social Icons */}
@@ -160,10 +160,12 @@ export function Footer() {
   <div className="bg-gray-200 p-3 rounded-full">
     <MapPin className="text-red-500" size={20} />
   </div>
+
   <div>
     <p className="text-xs text-gray-500 uppercase">Visit Us</p>
 
-    <div className="space-y-3">
+    {/* Changed here */}
+    <div className="flex gap-8">
       <div>
         <p className="text-black font-medium">Anuradhapura</p>
         <p className="text-gray-600 text-sm">
@@ -181,6 +183,7 @@ export function Footer() {
   </div>
 </div>
 
+           
           </div>
         </div>
 

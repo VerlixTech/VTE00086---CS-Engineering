@@ -344,7 +344,7 @@ export function TestimonialsSection() {
               >
                 <div className="relative w-36 h-70 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/Servicess/image 4.svg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -367,7 +367,7 @@ export function TestimonialsSection() {
                 style={{ transitionDelay: columns[2].delay }}
               >
                 <Image
-                  src="/About/Rectangle 9.svg"
+                  src="/ServiceSection/Dasa Cocos (pvt) Ltd (4).jpeg"
                   alt="Building"
                   fill
                   className="object-cover"
@@ -381,7 +381,7 @@ export function TestimonialsSection() {
                 style={{ transitionDelay: columns[3].delay }}
               >
                 <Image
-                  src="/ChannelPartners/mysilo image 5.svg"
+                  src="/ServiceSection/image 3.svg"
                   alt="Building"
                   fill
                   className="object-cover"
@@ -424,7 +424,7 @@ export function TestimonialsSection() {
               >
                 <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/ServiceSection/Tobaco/Celone Tobaco (5).jpeg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -432,7 +432,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/ServiceSection/Tobaco/Celone Tobaco (7).jpeg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -440,7 +440,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="relative w-36 h-36 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/Experience/Elasto.jpg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -456,7 +456,7 @@ export function TestimonialsSection() {
               >
                 <div className="relative w-36 h-46 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/ServiceSection/Dasa Cocos (pvt) Ltd (8).jpeg"
                     alt="Building"
                     fill
                     className="object-cover"
@@ -464,7 +464,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="relative w-36 h-46 bg-gray-400 rounded-xl overflow-hidden">
                   <Image
-                    src="/About/Rectangle 9.svg"
+                    src="/Experience/Ocean-S.png"
                     alt="Building"
                     fill
                     className="object-cover"

@@ -191,7 +191,6 @@ export function Footer() {
         <div className="border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-red-500 transition-colors">Contact</Link>
             <Link href="#" className="hover:text-red-500 transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-red-500 transition-colors">Terms of Use</Link>
           </div>

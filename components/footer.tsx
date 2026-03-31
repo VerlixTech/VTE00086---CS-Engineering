@@ -55,9 +55,9 @@ export function Footer() {
                 { label: "Home", href: "/" },
                 { label: "About Us", href: "/about" },
                 { label: 'Our Partners', href: '/partners' },
-                { label: "Service", href: "/services" },
+                { label: "Services", href: "/services" },
                 { label: "Experience", href: "/experience" },
-                { label: "Product Supply", href: "/products" },
+                { label: "Products Supply", href: "/products" },
                 { label: 'News', href: '/news' },
                 ].map((item) => (
                 <li key={item.label}>
@@ -84,7 +84,7 @@ export function Footer() {
                 'Other Services'
               ].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-red-500 transition-colors text-sm">
+                  <Link href="/services" className="text-gray-600 hover:text-red-500 transition-colors text-sm">
                     {item}
                   </Link>
                 </li>
@@ -107,7 +107,7 @@ export function Footer() {
                 'Steam Accessories'
               ].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-red-500 transition-colors text-sm">
+                  <Link href="/products" className="text-gray-600 hover:text-red-500 transition-colors text-sm">
                     {item}
                   </Link>
                 </li>

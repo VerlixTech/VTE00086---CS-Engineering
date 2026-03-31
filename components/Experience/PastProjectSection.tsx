@@ -88,7 +88,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "/Experience/Tyre.jpg ",
+    image: "/Experience/Tyre1.jpg ",
     tag: "MULTI-UNIT",
     location: "HORANA",
     title: "Ferentino Tyres",

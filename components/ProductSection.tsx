@@ -102,7 +102,7 @@ import { ArrowRight } from "lucide-react";
 const products = [
   { name: "Steam Boilers", image: "/ProductSection/genarator.svg" },
   { name: "Thermic Fluid Heaters", image: "/ProductSection/Fluid Heater.svg" },
-  { name: "Hot water Generators", image: "/ProductSection/Hot Water Genarator.jpeg" },
+  { name: "Hot water Generators", image: "/ProductSection/Hot-water-generator-1.webp" },
   { name: "Water Treatment Solutions", image: "/ProductSection/water treatment.jpg" },
   { name: "Environmental solutions", image: "/ProductSection/environmental.webp" },
   { name: "Steam radiators", image: "/ProductSection/Steam Radiator.jpeg" },

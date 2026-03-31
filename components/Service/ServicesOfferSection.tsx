@@ -62,6 +62,7 @@ export function ServicesOfferSection() {
             <div
               key={index}
               className="grid md:grid-cols-2 gap-10 items-center"
+               data-aos="fade-right" data-aos-duration="1000"
             >
               {/* Image – always first on mobile */}
               <div

@@ -78,7 +78,7 @@ export function WelcomeSection() {
       
 
         {/* Content Section */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="grid md:grid-cols-2 gap-10 items-start" data-aos="fade-right" data-aos-duration="1000">
 
           {/* Left Text */}
           <div>

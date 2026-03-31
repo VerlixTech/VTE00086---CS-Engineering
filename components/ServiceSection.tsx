@@ -138,7 +138,7 @@ const services = [
 
 function ServiceCard({ service }: any) {
   return (
-    <div className="relative rounded-xl overflow-hidden group">
+    <div className="relative rounded-xl overflow-hidden group"  data-aos="fade-right" data-aos-duration="1000">
       <Image
         src={service.image}
         alt={service.title}
@@ -177,14 +177,14 @@ export function ServiceSection() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" >
 
           {/* Top Row */}
           <ServiceCard service={services[0]} />
           <ServiceCard service={services[1]} />
 
           {/* Tall Card */}
-          <div className="lg:row-span-2 relative rounded-xl overflow-hidden group">
+          <div className="lg:row-span-2 relative rounded-xl overflow-hidden group"  data-aos="fade-right" data-aos-duration="1000">
             <Image
               src="/ServiceSection/image 5.svg"
               alt="Boiler Installation"

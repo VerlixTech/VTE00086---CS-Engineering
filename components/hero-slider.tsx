@@ -107,7 +107,7 @@ export function HeroSlider() {
       </div>
 
       {/* White Bottom Section */}
-      <div className="absolute bottom-0 left-0 w-full h-[90px] md:h-[140px] bg-white z-20"></div>
+      <div className="absolute bottom-0 left-0 w-full h-[90px] md:h-[140px] bg-white z-20" ></div>
 
       {/* Red Background Shape */}
       <Image
@@ -115,7 +115,7 @@ export function HeroSlider() {
         alt="shape"
         width={1300}
         height={1300}
-        className="hidden lg:block absolute bottom-6 right-0 w-[900px] lg:w-[1200px] xl:w-[1500px] h-auto z-10 pointer-events-none"
+        className="hidden lg:block absolute bottom-6 right-0 w-[900px] lg:w-[1200px] xl:w-[1500px] h-auto z-10 pointer-events-none" 
       />
 
       {/* Boiler Image (FIX: lower z-index so it won't block buttons) */}
@@ -124,7 +124,7 @@ export function HeroSlider() {
         alt="boilers"
         width={1200}
         height={700}
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] sm:w-[800px] md:w-[650px] lg:w-[900px] xl:w-[1100px] h-auto z-20 pointer-events-none"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] sm:w-[800px] md:w-[650px] lg:w-[900px] xl:w-[1100px] h-auto z-20 pointer-events-none"  data-aos="fade-right" data-aos-duration="1000"
       />
     </section>
   );

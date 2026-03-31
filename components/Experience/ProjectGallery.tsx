@@ -223,6 +223,7 @@ function ProjectSection({ project }: any) {
             key={i}
             className={`relative rounded-2xl overflow-hidden cursor-pointer ${item.className}`}
             onClick={() => setShowAll(true)}
+             data-aos="fade-right" data-aos-duration="1000"
           >
             <Image
               src={item.src}

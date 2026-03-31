@@ -675,6 +675,7 @@ export function ChannelPartners() {
             <div
               key={index}
               className="relative grid md:grid-cols-[1fr_1.2fr] gap-0 md:gap-4 items-center"
+               data-aos="fade-right" data-aos-duration="1000"
             >
               {/* Left: Logo */}
               <div className="flex items-center justify-center">

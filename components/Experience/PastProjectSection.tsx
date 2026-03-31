@@ -150,7 +150,7 @@ export  function PastProjectSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project) => (
-            <div key={project.id} className="group cursor-pointer">
+            <div key={project.id} className="group cursor-pointer"  data-aos="fade-right" data-aos-duration="1000">
 
               {/* Image */}
               <div className="relative h-48 rounded-lg overflow-hidden">

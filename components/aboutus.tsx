@@ -117,7 +117,7 @@ export function AboutUs() {
         <div className="grid lg:grid-cols-2 gap-10 items-stretch mb-20">
 
           {/* LEFT IMAGE */}
-          <div className="relative overflow-hidden rounded-xl">
+          <div className="relative overflow-hidden rounded-xl"  data-aos="fade-right" data-aos-duration="1000">
             <Image
               src="/aboutus.svg"
               alt="About CS Engineering"
@@ -138,10 +138,10 @@ export function AboutUs() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="flex flex-col gap-10 justify-center">
+          <div className="flex flex-col gap-10 justify-center" >
 
             {/* Vision */}
-            <div className="bg-white text-black p-8 rounded-xl shadow md:py-18">
+            <div className="bg-white text-black p-8 rounded-xl shadow md:py-18"  data-aos="fade-right" data-aos-duration="1000">
               <h3 className="text-2xl font-bold mb-3">Our Vision</h3>
 
               <p className="text-gray-600 leading-relaxed max-w-lg">
@@ -152,7 +152,7 @@ export function AboutUs() {
             </div>
 
             {/* Mission */}
-            <div className="bg-red-600 text-white p-8 rounded-xl shadow-lg md:py-18 ">
+            <div className="bg-red-600 text-white p-8 rounded-xl shadow-lg md:py-18 "  data-aos="fade-right" data-aos-duration="1000">
               <h3 className="text-2xl font-bold mb-3">Our Mission</h3>
 
               <p className="text-sm leading-relaxed">
@@ -186,6 +186,7 @@ export function AboutUs() {
           {features.map((item, index) => (
            <div
   key={index}
+   data-aos="fade-right" data-aos-duration="1000"
   className="relative bg-gray-100 rounded-xl p-6 pt-32 hover:shadow-lg transition overflow-hidden"
 >
 

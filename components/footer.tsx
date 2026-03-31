@@ -33,13 +33,11 @@ export function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4 pt-2">
-              <Link href="#" className="text-gray-500 hover:text-red-500 transition-colors">
+              <Link href="https://www.facebook.com/share/1CKnxRdnNh/" className="text-gray-500 hover:text-red-500 transition-colors">
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-red-500 transition-colors">
-                <Twitter size={20} />
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-red-500 transition-colors">
+  
+              <Link href="https://www.linkedin.com/company/csengserv/" className="text-gray-500 hover:text-red-500 transition-colors">
                 <Linkedin size={20} />
               </Link>
               <Link href="#" className="text-gray-500 hover:text-red-500 transition-colors">

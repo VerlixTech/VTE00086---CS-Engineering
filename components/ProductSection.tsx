@@ -128,6 +128,7 @@ export function ProductSection() {
           {products.map((product, index) => (
             <div
               key={index}
+               data-aos="fade-right" data-aos-duration="1000"
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition text-center"
             >
               {/* Image (NO GAP + ROUNDED TOP) */}

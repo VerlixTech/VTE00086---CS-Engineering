@@ -148,7 +148,7 @@ export function SteamEngineeringSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Top Section */}
-        <div className="grid md:grid-cols-2 gap-10 mb-14">
+        <div className="grid md:grid-cols-2 gap-10 mb-14"  data-aos="fade-right" data-aos-duration="1000">
 
           {/* Left Title */}
           <div>
@@ -179,17 +179,18 @@ export function SteamEngineeringSection() {
         <div className="grid md:grid-cols-2 gap-8">
 
           {/* Left Image Card */}
-          <div className="relative rounded-xl overflow-hidden min-h-[550px] md:min-h-[600px]">
+          <div className="relative rounded-xl overflow-hidden min-h-[550px] md:min-h-[600px]"  data-aos="fade-right" data-aos-duration="1000">
 
             <Image
               src="/About/Rectangle 9.svg"
               alt="Chamara Sandaruwan"
               fill
               className="object-cover"
+              
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-8 text-white">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-8 text-white" >
 
               {/* Name */}
               <h3 className="text-2xl md:text-4xl font-bold mb-2">
@@ -241,7 +242,7 @@ export function SteamEngineeringSection() {
           </div>
 
           {/* Right Text Card */}
-          <div className="bg-gray-100 rounded-xl p-6 md:p-8">
+          <div className="bg-gray-100 rounded-xl p-6 md:p-8"  data-aos="fade-right" data-aos-duration="1000">
 
             <h3 className="text-2xl md:text-4xl font-semibold mb-4">
               Expert Engineering Team

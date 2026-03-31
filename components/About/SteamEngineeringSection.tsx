@@ -182,7 +182,7 @@ export function SteamEngineeringSection() {
           <div className="relative rounded-xl overflow-hidden min-h-[550px] md:min-h-[600px]"  data-aos="fade-right" data-aos-duration="1000">
 
             <Image
-              src="/About/Rectangle 9.svg"
+              src="/About/Chamara Sandaruwan.jpeg"
               alt="Chamara Sandaruwan"
               fill
               className="object-cover"

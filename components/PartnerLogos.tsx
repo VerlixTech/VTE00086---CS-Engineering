@@ -348,7 +348,7 @@ export function PartnerLogos() {
                     <Image
                       src={logo.image}
                       alt={logo.name}
-                      width={100}
+                      width={70}
                       height={50}
                       className="object-contain"
                     />
@@ -369,7 +369,7 @@ export function PartnerLogos() {
                     <Image
                       src={logo.image}
                       alt={logo.name}
-                      width={100}
+                      width={70}
                       height={50}
                       className="object-contain"
                     />

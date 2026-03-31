@@ -260,9 +260,9 @@ const navigation: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About us', href: '/about' },
   { name: 'Our Partners', href: '/partners' },
-  { name: 'Services', href: '/service' },
+  { name: 'Services', href: '/services' },
   { name: 'Experience', href: '/experience' },
-  { name: 'Product Supply', href: '/product' },
+  { name: 'Products Supply', href: '/products' },
   { name: 'News', href: '/news' },
 ];
 
